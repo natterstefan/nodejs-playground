@@ -1,5 +1,12 @@
 # NodeJS Playground
 
+## Deploy to Docker
+
+```bash
+docker build -t francescoxx/node-docker:0.0.1 .
+docker push francescoxx/node-docker:0.0.1
+```
+
 ## Misc
 
 - <https://github.com/FrancescoXX/docker-react>
