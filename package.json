@@ -5,7 +5,8 @@
   "private": "true",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,14 @@
   },
   "homepage": "https://github.com/natterstefan/nodejs-playground#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "@types/express": "^4.17.10",
     "all-contributors-cli": "^6.19.0",
+    "nodemon": "^2.0.7",
     "prettier": "^2.2.1"
   }
 }

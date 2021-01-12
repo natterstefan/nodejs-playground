@@ -2,4 +2,4 @@
 .vscode
 .all-contributorsrc
 node_modules
-prettier.config.jss
+prettier.config.js

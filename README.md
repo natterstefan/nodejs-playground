@@ -1,15 +1,22 @@
 # NodeJS Playground
 
-## Deploy to Docker
+## How to run the Docker Image
 
 ```bash
-docker build -t francescoxx/node-docker:0.0.1 .
+docker-compose up --build
+```
+
+## Build and Deploy Docker Image
+
+```bash
+docker-compose build
 docker push francescoxx/node-docker:0.0.1
 ```
 
 ## Misc
 
 - <https://github.com/FrancescoXX/docker-react>
+- <https://hub.docker.com/r/francescoxx/node-docker>
 
 ## Contributors ✨
 

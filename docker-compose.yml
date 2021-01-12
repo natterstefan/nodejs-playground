@@ -2,8 +2,9 @@ version: '3.6'
 
 services:
   app:
+    image: francescoxx/node-docker:0.0.2
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '9000:3000'
+      - '8080:3000'
