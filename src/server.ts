@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { Request, Response, NextHandler } from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 
@@ -18,6 +18,14 @@ app.use(cors())
 // BODYPARSER
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+
+/**
+ * Middlewares
+ */
+app.use((req: Request, res: Response, next: NextHandler) => {
+  res.locals.message = 'Hello World'
+  next()
+})
 
 /**
  * Primary app routes.
