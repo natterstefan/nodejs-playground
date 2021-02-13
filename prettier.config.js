@@ -1,12 +1,2 @@
-module.exports = {
-  arrowParens: 'avoid',
-  bracketSpacing: true,
-  endOfLine: 'auto',
-  printWidth: 80,
-  semi: false,
-  singleQuote: true,
-  trailingComma: 'all',
-  tabWidth: 2,
-  useTabs: false,
-  proseWrap: 'always',
-}
+/* eslint-disable import/no-extraneous-dependencies */
+module.exports = require('eslint-config-ns-ts/prettier.config')

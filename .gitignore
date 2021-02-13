@@ -50,8 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
+# Optional eslint and jest cache
 .eslintcache
+.jest-cache
 
 # Microbundle cache
 .rpt2_cache/
@@ -102,6 +103,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# VS Code
-.vscode

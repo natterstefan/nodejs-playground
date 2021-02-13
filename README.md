@@ -1,5 +1,21 @@
 # NodeJS Playground
 
+## Getting Started
+
+```bash
+# install dependencies
+yarn
+
+# prepare the repo
+yarn copyfiles
+
+# build the app the first time
+yarn build
+
+# start the app
+yarn start
+```
+
 ## How to run the Docker Image
 
 ```bash
@@ -10,13 +26,13 @@ docker-compose up --build
 
 ```bash
 docker-compose build
-docker push francescoxx/node-docker:0.0.1
 ```
 
 ## Misc
 
-- <https://github.com/FrancescoXX/docker-react>
-- <https://hub.docker.com/r/francescoxx/node-docker>
+- <https://github.com/microsoft/TypeScript-Node-Starter>
+- <https://github.com/w3tecch/express-typescript-boilerplate>
+- <https://github.com/gothinkster/node-express-realworld-example-app>
 
 ## Contributors ✨
 
@@ -28,7 +44,6 @@ Thanks goes to these wonderful people
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FrancescoXX"><img src="https://avatars0.githubusercontent.com/u/18360871?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Francesco Ciulla</b></sub></a><br /><a href="#ideas-FrancescoXX" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://natterstefan.me/"><img src="https://avatars2.githubusercontent.com/u/1043668?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stefan Natter</b></sub></a><br /><a href="#ideas-natterstefan" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>

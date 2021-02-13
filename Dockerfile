@@ -11,8 +11,14 @@ COPY package.json yarn.lock ./
 # install all dependencies
 RUN yarn install --frozen-lockfile --no-progress
 
+# copy build files
+COPY tsconfig.json ./
+
 # source code of the app
-COPY src/ ./
+COPY src/ ./src
+
+# build the app
+RUN yarn build
 
 # expose the port
 EXPOSE 3000
