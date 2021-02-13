@@ -1,4 +1,10 @@
 import express from 'express'
+import cors from 'cors'
+import bodyParser from 'body-parser'
+
+// Controllers (route handlers)
+import * as homeController from './controllers/home'
+import * as apiController from './controllers/api'
 
 // Create Express server
 const app = express()
@@ -6,9 +12,21 @@ const app = express()
 // Express configuration
 app.set('port', process.env.PORT || 3000)
 
-app.get('/', (_req, res) => {
-  console.log('hello world called!')
-  res.send('Hello World!')
-})
+// Set proper CORS Headers
+app.use(cors())
+
+// BODYPARSER
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+/**
+ * Primary app routes.
+ */
+app.get('/', homeController.index)
+
+/**
+ * API routes.
+ */
+app.post('/api/:input', apiController.inputController)
 
 export default app
